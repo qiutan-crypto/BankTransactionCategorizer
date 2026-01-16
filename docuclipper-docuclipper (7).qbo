@@ -1,0 +1,2989 @@
+OFXHEADER:100
+DATA:OFXSGML
+VERSION:102
+SECURITY:NONE
+ENCODING:USASCII
+CHARSET:1252
+COMPRESSION:NONE
+OLDFILEUID:NONE
+NEWFILEUID:NONE
+<OFX>
+    <SIGNONMSGSRSV1>
+        <SONRS>
+            <STATUS>
+                <CODE>0</CODE>
+                <SEVERITY>INFO</SEVERITY>
+            </STATUS>
+            <DTSERVER>20200101000000</DTSERVER>
+            <LANGUAGE>ENG</LANGUAGE>
+            <DTACCTUP>0</DTACCTUP>
+            <FI>
+                <ORG>Chase Web Download</ORG>
+                <FID>02430</FID>
+            </FI>
+            <INTU.BID>02430</INTU.BID>
+            <INTU.USERID>jorgemarsal</INTU.USERID>
+        </SONRS>
+    </SIGNONMSGSRSV1>
+    <BANKMSGSRSV1>
+        <STMTTRNRS>
+            <TRNUID>0</TRNUID>
+            <STATUS>
+                <CODE>0</CODE>
+                <SEVERITY>INFO</SEVERITY>
+            </STATUS>
+            <STMTRS>
+                <CURDEF>USD</CURDEF>
+                <BANKACCTFROM>
+                    <BANKID>123456789</BANKID>
+                    <ACCTID>123456789</ACCTID>
+                    <ACCTTYPE>CHECKING</ACCTTYPE>
+                </BANKACCTFROM>
+                <BANKTRANLIST>
+                    <DTSTART>20250605000000</DTSTART>
+                    <DTEND>20251031000000</DTEND>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250610000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>3ee017a3cab29fdc</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT 025162008370469PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250611000000</DTPOSTED>
+                        <TRNAMT>-100</TRNAMT>
+                        <FITID>8c4f9556c84a1b78</FITID>
+                        <NAME>PAYMT SYNCHRONY RFS</NAME>
+                        <MEMO>BILL PAYMT SYNCHRONY RFS</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250611000000</DTPOSTED>
+                        <TRNAMT>-0.68</TRNAMT>
+                        <FITID>bd08b6dc85f1db47</FITID>
+                        <NAME>ACCTVERIFY OF AMERICA</NAME>
+                        <MEMO>ACCTVERIFY BANK OF AMERICA</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250611000000</DTPOSTED>
+                        <TRNAMT>-189.17</TRNAMT>
+                        <FITID>4be0035d7f4bb446</FITID>
+                        <NAME>PAYMT JCREW SYNCB</NAME>
+                        <MEMO>BILL PAYMT J.CREW/SYNCB 025162008304664CTX 025162008370463PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250611000000</DTPOSTED>
+                        <TRNAMT>-67.51</TRNAMT>
+                        <FITID>27e5d2b7602e6eaa</FITID>
+                        <NAME>PAYMT CHASE MC VISA</NAME>
+                        <MEMO>BILL PAYMT CHASE MC & VISA</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250611000000</DTPOSTED>
+                        <TRNAMT>-200</TRNAMT>
+                        <FITID>93391d1289df83e0</FITID>
+                        <NAME>PAYMT DILLARDS</NAME>
+                        <MEMO>BILL PAYMT DILLARD'S 025162008370447PPD 025162008370455PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250611000000</DTPOSTED>
+                        <TRNAMT>-206.39</TRNAMT>
+                        <FITID>9c76aa005809539a</FITID>
+                        <NAME>PAYMT BARCLAYS DE</NAME>
+                        <MEMO>BILL PAYMT BARCLAYS BANK DE 025168010176006CCD 025162008370442PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250611000000</DTPOSTED>
+                        <TRNAMT>-1823.06</TRNAMT>
+                        <FITID>a8417e38804eab72</FITID>
+                        <NAME>PAYMT FORD CO OLB XFER TO</NAME>
+                        <MEMO>BILL PAYMT FORD CREDIT CO OLB XFER TO 8853 025162008370461PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250611000000</DTPOSTED>
+                        <TRNAMT>-5000</TRNAMT>
+                        <FITID>d1f86d05cc2be147</FITID>
+                        <NAME>E DISCOVER OLB XFER TO</NAME>
+                        <MEMO>E-PAYMENT DISCOVER OLB XFER TO 8853 025162008415361WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250611000000</DTPOSTED>
+                        <TRNAMT>-7000</TRNAMT>
+                        <FITID>de234f8b272159f4</FITID>
+                        <NAME>EPAY CHASE CRD</NAME>
+                        <MEMO>EPAY CHASE CREDIT CRD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250611000000</DTPOSTED>
+                        <TRNAMT>-7226.73</TRNAMT>
+                        <FITID>e3de5de8ec192047</FITID>
+                        <NAME>CITI</NAME>
+                        <MEMO>PAYMENT CITI CARD ONLINE 025162008301790WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250612000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>2ea3ba5c9f6fd796</FITID>
+                        <NAME>N A</NAME>
+                        <MEMO>N/A</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250612000000</DTPOSTED>
+                        <TRNAMT>-320</TRNAMT>
+                        <FITID>bd4c5e837c209e24</FITID>
+                        <NAME>PAYMT SHELL</NAME>
+                        <MEMO>BILL PAYMT SHELL 025175001772677CCD 025163008691177PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250612000000</DTPOSTED>
+                        <TRNAMT>-5000</TRNAMT>
+                        <FITID>ea2408dbb0ca139b</FITID>
+                        <NAME>EPAY CHASE CRD OLB XFER TO</NAME>
+                        <MEMO>EPAY CHASE CREDIT CRD OLB XFER TO 8853 025162008473126WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250613000000</DTPOSTED>
+                        <TRNAMT>-1082.98</TRNAMT>
+                        <FITID>1b76cc86ca55d745</FITID>
+                        <NAME>UTIL PYMT ATMOS ENERGY SGL</NAME>
+                        <MEMO>UTIL PYMT ATMOS ENERGY SGL 025176001995199WEB 025164009108203WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250616000000</DTPOSTED>
+                        <TRNAMT>-567</TRNAMT>
+                        <FITID>508973b4959f3093</FITID>
+                        <NAME>MEMBER BENEFITS</NAME>
+                        <MEMO>ACH MEMBER BENEFITS</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250617000000</DTPOSTED>
+                        <TRNAMT>-6956.73</TRNAMT>
+                        <FITID>fb51140810070c9b</FITID>
+                        <NAME>MTG PMT MIDWEST LOAN OLB XFER T</NAME>
+                        <MEMO>MTG PMT MIDWEST LOAN OLB XFER TO 8853 025168010180665WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250618000000</DTPOSTED>
+                        <TRNAMT>-3400</TRNAMT>
+                        <FITID>ae9f57ee089d2a27</FITID>
+                        <CHECKNUM>2000</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2000</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250618000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>4a9e9111ce690f47</FITID>
+                        <NAME>CHANNEL OLB XFER TO</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT OLB XFER TO 8853</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250618000000</DTPOSTED>
+                        <TRNAMT>-180.18</TRNAMT>
+                        <FITID>dff5723c474e0313</FITID>
+                        <NAME>INVOICE PAYCHEX EIB OLB XFER TO</NAME>
+                        <MEMO>INVOICE PAYCHEX EIB OLB XFER TO 8853 025169000413878CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250618000000</DTPOSTED>
+                        <TRNAMT>-1483.14</TRNAMT>
+                        <FITID>d1d6ec7277df49f7</FITID>
+                        <NAME>TAXES PAYCHEX TPS</NAME>
+                        <MEMO>TAXES PAYCHEX TPS 025181003153700CCD 025168010170920CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250618000000</DTPOSTED>
+                        <TRNAMT>-1577.91</TRNAMT>
+                        <FITID>96f67e6aea606956</FITID>
+                        <NAME>GMF Pymt GM Financial</NAME>
+                        <MEMO>GMF Pymt GM Financial 025169000371311WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250618000000</DTPOSTED>
+                        <TRNAMT>-5802.85</TRNAMT>
+                        <FITID>084d83c21df7bf87</FITID>
+                        <NAME>PAYROLL PAYCHEX INC</NAME>
+                        <MEMO>PAYROLL PAYCHEX INC</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250620000000</DTPOSTED>
+                        <TRNAMT>-2000</TRNAMT>
+                        <FITID>515fc76d00e48c71</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250623000000</DTPOSTED>
+                        <TRNAMT>-1450</TRNAMT>
+                        <FITID>759bd5226834e592</FITID>
+                        <CHECKNUM>2001</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2001</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250623000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>c5fd86b257300068</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250624000000</DTPOSTED>
+                        <TRNAMT>-731</TRNAMT>
+                        <FITID>f6bb344b7bf39465</FITID>
+                        <NAME>SBA EIDL LOAN</NAME>
+                        <MEMO>PAYMENT SBA EIDL LOAN 025174001617580CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250624000000</DTPOSTED>
+                        <TRNAMT>-809</TRNAMT>
+                        <FITID>6d135e1054f89684</FITID>
+                        <NAME>BILLPAY THE HANOVER INSU</NAME>
+                        <MEMO>BILLPAY THE HANOVER INSU 025161008246421WEB 025175001702203CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250624000000</DTPOSTED>
+                        <TRNAMT>-1071.11</TRNAMT>
+                        <FITID>49c5e84d20582924</FITID>
+                        <NAME>DELLPAY DELL FINANCIAL CHANNEL</NAME>
+                        <MEMO>DELLPAY DELL FINANCIAL CHANNEL TRANSFER DEBIT 025175001772678CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250624000000</DTPOSTED>
+                        <TRNAMT>-1071.11</TRNAMT>
+                        <FITID>217be5f8c80e65cf</FITID>
+                        <NAME>DELLPAY DELL FINANCIAL</NAME>
+                        <MEMO>DELLPAY DELL FINANCIAL</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250625000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>e44832003989938b</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250625000000</DTPOSTED>
+                        <TRNAMT>-424</TRNAMT>
+                        <FITID>4fa1d9c291c4f6f8</FITID>
+                        <NAME>PONDMEDICS INCOR</NAME>
+                        <MEMO>SALE PONDMEDICS INCOR</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250625000000</DTPOSTED>
+                        <TRNAMT>-21150</TRNAMT>
+                        <FITID>e409540b915e034a</FITID>
+                        <NAME>LAKEHILL PREPARA</NAME>
+                        <MEMO>SALE LAKEHILL PREPARA 025176001995297CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250630000000</DTPOSTED>
+                        <TRNAMT>-400</TRNAMT>
+                        <FITID>de069abad6d5a9b7</FITID>
+                        <CHECKNUM>2003</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2003 *</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250630000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>5a5dbf1af4fd6db9</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT 025164009230353PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250630000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>349d0f1c51e9cf52</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250630000000</DTPOSTED>
+                        <TRNAMT>-750</TRNAMT>
+                        <FITID>682ff15bd2383f5e</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250630000000</DTPOSTED>
+                        <TRNAMT>-2295.07</TRNAMT>
+                        <FITID>9bb2d826578cb8f2</FITID>
+                        <NAME>TAXES PAYCHEX TPS</NAME>
+                        <MEMO>TAXES PAYCHEX TPS</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250630000000</DTPOSTED>
+                        <TRNAMT>-8453.88</TRNAMT>
+                        <FITID>994135674bcde81a</FITID>
+                        <NAME>PAYROLL PAYCHEX RCX</NAME>
+                        <MEMO>PAYROLL PAYCHEX - RCX 025181003150572CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250630000000</DTPOSTED>
+                        <TRNAMT>-3</TRNAMT>
+                        <FITID>cee3fe339ac6f63a</FITID>
+                        <NAME>PAPER FEE</NAME>
+                        <MEMO>PAPER STATEMENT FEE</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250701000000</DTPOSTED>
+                        <TRNAMT>-3400</TRNAMT>
+                        <FITID>5994ba8e6afac88e</FITID>
+                        <CHECKNUM>2013</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2013 *</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250701000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>ef577ba4056e9ad0</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250701000000</DTPOSTED>
+                        <TRNAMT>-195.57</TRNAMT>
+                        <FITID>23f5ce4f99fca17d</FITID>
+                        <NAME>INVOICE PAYCHEX EIB</NAME>
+                        <MEMO>INVOICE PAYCHEX EIB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250701000000</DTPOSTED>
+                        <TRNAMT>-545.42</TRNAMT>
+                        <FITID>e056b89c736a2edf</FITID>
+                        <NAME>SUNRUN INC</NAME>
+                        <MEMO>8554786786 SUNRUN INC 025182003798914PPD 025192006931649CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250701000000</DTPOSTED>
+                        <TRNAMT>-6926.73</TRNAMT>
+                        <FITID>6c5a549c4d86213f</FITID>
+                        <NAME>MTG PMT MIDWEST LOAN</NAME>
+                        <MEMO>MTG PMT MIDWEST LOAN</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250702000000</DTPOSTED>
+                        <TRNAMT>-750</TRNAMT>
+                        <FITID>98cef16e88df62ae</FITID>
+                        <CHECKNUM>2005</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2005 *</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250702000000</DTPOSTED>
+                        <TRNAMT>-545.42</TRNAMT>
+                        <FITID>10aa034657150a33</FITID>
+                        <NAME>SUNRUN INC</NAME>
+                        <MEMO>8554786786 SUNRUN INC</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250703000000</DTPOSTED>
+                        <TRNAMT>-455</TRNAMT>
+                        <FITID>18193134c289f731</FITID>
+                        <CHECKNUM>2002</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2002</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250703000000</DTPOSTED>
+                        <TRNAMT>-523.13</TRNAMT>
+                        <FITID>38dde17df001e469</FITID>
+                        <NAME>UTIL PYMT ATMOS ENERGY RCR</NAME>
+                        <MEMO>UTIL PYMT ATMOS ENERGY RCR</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250703000000</DTPOSTED>
+                        <TRNAMT>-542</TRNAMT>
+                        <FITID>e646651709c58234</FITID>
+                        <NAME>MEMBER BENEFITS</NAME>
+                        <MEMO>ACH MEMBER BENEFITS</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250707000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>97d8e7c957044dda</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT 025203009544482CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250707000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>d971ec309b9db431</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250707000000</DTPOSTED>
+                        <TRNAMT>-10000</TRNAMT>
+                        <FITID>ff2d9d4389db3c1d</FITID>
+                        <NAME>PMT BK OF AMER VI MC</NAME>
+                        <MEMO>ONLINE PMT BK OF AMER VI/MC</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250709000000</DTPOSTED>
+                        <TRNAMT>-7866.99</TRNAMT>
+                        <FITID>ecb8ed2f65d24b7b</FITID>
+                        <CHECKNUM>2041</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2041</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250709000000</DTPOSTED>
+                        <TRNAMT>-150</TRNAMT>
+                        <FITID>8f3d471489b49468</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250709000000</DTPOSTED>
+                        <TRNAMT>-1577.91</TRNAMT>
+                        <FITID>a107ea608c67d9f3</FITID>
+                        <NAME>GMF Pymt GM Financial</NAME>
+                        <MEMO>GMF Pymt GM Financial</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250709000000</DTPOSTED>
+                        <TRNAMT>-1823.06</TRNAMT>
+                        <FITID>a9b16f277fe24c60</FITID>
+                        <NAME>FORDCREDIT LINCOLN AFS</NAME>
+                        <MEMO>FORDCREDIT LINCOLN AFS</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250709000000</DTPOSTED>
+                        <TRNAMT>-5000</TRNAMT>
+                        <FITID>f963ffe54a5a8283</FITID>
+                        <NAME>EPAY CHASE CRD OLB XFER TO</NAME>
+                        <MEMO>EPAY CHASE CREDIT CRD 025190006058096WEB OLB XFER TO 8853</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250709000000</DTPOSTED>
+                        <TRNAMT>-7701.31</TRNAMT>
+                        <FITID>cd1a54242f1f38ec</FITID>
+                        <NAME>E DISCOVER OLB XFER TO</NAME>
+                        <MEMO>E-PAYMENT DISCOVER 025190006022941WEB OLB XFER TO 8853</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250709000000</DTPOSTED>
+                        <TRNAMT>-7991.16</TRNAMT>
+                        <FITID>1ec30e3a1c396643</FITID>
+                        <NAME>CITI</NAME>
+                        <MEMO>PAYMENT CITI CARD ONLINE</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250709000000</DTPOSTED>
+                        <TRNAMT>-10000</TRNAMT>
+                        <FITID>10abb91636a378e8</FITID>
+                        <NAME>EPAY CHASE CRD</NAME>
+                        <MEMO>EPAY CHASE CREDIT CRD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250710000000</DTPOSTED>
+                        <TRNAMT>-3600</TRNAMT>
+                        <FITID>c12474aecaf0eb3f</FITID>
+                        <CHECKNUM>2008</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2008</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250710000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>239231d2ba78d2c0</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250711000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>61daeeb3151857d6</FITID>
+                        <CHECKNUM>2006</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2006</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250711000000</DTPOSTED>
+                        <TRNAMT>-5682.07</TRNAMT>
+                        <FITID>bd047e599a841d5a</FITID>
+                        <CHECKNUM>2007</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2007</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250711000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>f0e6f7869d9cfd9c</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250714000000</DTPOSTED>
+                        <TRNAMT>-200</TRNAMT>
+                        <FITID>a8668d16bba44455</FITID>
+                        <CHECKNUM>2028</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2028</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250714000000</DTPOSTED>
+                        <TRNAMT>-55.56</TRNAMT>
+                        <FITID>4d591ad102c4452b</FITID>
+                        <CHECKNUM>2029</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2029</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250714000000</DTPOSTED>
+                        <TRNAMT>-375</TRNAMT>
+                        <FITID>5ec68a1125cfa7aa</FITID>
+                        <CHECKNUM>2014</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2014</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250714000000</DTPOSTED>
+                        <TRNAMT>-3805.74</TRNAMT>
+                        <FITID>f0bd339261c18964</FITID>
+                        <CHECKNUM>2037</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2037</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250714000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>96129b591677f567</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250714000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>0d4e695fa0f530cd</FITID>
+                        <NAME>CHANNEL OLB XFER TO</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT 025181003409530CCD OLB XFER TO 8853</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250714000000</DTPOSTED>
+                        <TRNAMT>-2037.94</TRNAMT>
+                        <FITID>c77e7f686a206885</FITID>
+                        <NAME>TAXES PAYCHEX TPS</NAME>
+                        <MEMO>TAXES PAYCHEX TPS</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250714000000</DTPOSTED>
+                        <TRNAMT>-7364.58</TRNAMT>
+                        <FITID>7ec4c146c2e514ab</FITID>
+                        <NAME>PAYROLL PAYCHEX INC</NAME>
+                        <MEMO>PAYROLL PAYCHEX INC 025182004008895WEB 025192006940041CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250715000000</DTPOSTED>
+                        <TRNAMT>-150</TRNAMT>
+                        <FITID>8f64dc4460a4b873</FITID>
+                        <CHECKNUM>2025</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2025</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250715000000</DTPOSTED>
+                        <TRNAMT>-830</TRNAMT>
+                        <FITID>a9ef77f824c2c353</FITID>
+                        <CHECKNUM>2026</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2026</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250715000000</DTPOSTED>
+                        <TRNAMT>-273.08</TRNAMT>
+                        <FITID>82c379f2a7133a44</FITID>
+                        <CHECKNUM>2018</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2018</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250715000000</DTPOSTED>
+                        <TRNAMT>-32.65</TRNAMT>
+                        <FITID>8adfcbf78694fb1a</FITID>
+                        <CHECKNUM>2019</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2019</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250715000000</DTPOSTED>
+                        <TRNAMT>-2002.76</TRNAMT>
+                        <FITID>31cf7b52b7de2996</FITID>
+                        <CHECKNUM>2020</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2020</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250715000000</DTPOSTED>
+                        <TRNAMT>-321.26</TRNAMT>
+                        <FITID>e45daaf824eea250</FITID>
+                        <CHECKNUM>2021</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2021</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250715000000</DTPOSTED>
+                        <TRNAMT>-182.85</TRNAMT>
+                        <FITID>653d53f726d7209e</FITID>
+                        <NAME>INVOICE PAYCHEX EIB</NAME>
+                        <MEMO>INVOICE PAYCHEX EIB 025183004219290PPD 025195007407089CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250715000000</DTPOSTED>
+                        <TRNAMT>-475</TRNAMT>
+                        <FITID>9adf170807d0bcde</FITID>
+                        <NAME>PAYMT SHELL</NAME>
+                        <MEMO>BILL PAYMT SHELL 025184004730984WEB 025196007679239PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250715000000</DTPOSTED>
+                        <TRNAMT>-1089.32</TRNAMT>
+                        <FITID>1e4525ec7bc0d459</FITID>
+                        <NAME>PAYROLL PAYCHEX INC</NAME>
+                        <MEMO>PAYROLL PAYCHEX INC 025196007684069CCD 025183004489062PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250715000000</DTPOSTED>
+                        <TRNAMT>-30</TRNAMT>
+                        <FITID>b813488ef7f21a9d</FITID>
+                        <NAME>FORCE PD</NAME>
+                        <MEMO>FORCE PD CHECK 1914</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250716000000</DTPOSTED>
+                        <TRNAMT>-4500</TRNAMT>
+                        <FITID>d6e8ffdd484fffca</FITID>
+                        <CHECKNUM>2024</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2024</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250716000000</DTPOSTED>
+                        <TRNAMT>-3300</TRNAMT>
+                        <FITID>3de26d4398380766</FITID>
+                        <CHECKNUM>2034</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2034 *</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250716000000</DTPOSTED>
+                        <TRNAMT>-306.1</TRNAMT>
+                        <FITID>e9a3711fb989e090</FITID>
+                        <CHECKNUM>2038</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2038</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250717000000</DTPOSTED>
+                        <TRNAMT>-1964.48</TRNAMT>
+                        <FITID>1ee2c1aace28a9de</FITID>
+                        <CHECKNUM>2035</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2035</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250721000000</DTPOSTED>
+                        <TRNAMT>-2690.59</TRNAMT>
+                        <FITID>81dfcaaee9d90f3d</FITID>
+                        <CHECKNUM>2036</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2036</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250721000000</DTPOSTED>
+                        <TRNAMT>-1350</TRNAMT>
+                        <FITID>08611ec5d053ea8b</FITID>
+                        <CHECKNUM>2042</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2042</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250721000000</DTPOSTED>
+                        <TRNAMT>-240</TRNAMT>
+                        <FITID>8286a0e11c94ebde</FITID>
+                        <CHECKNUM>2043</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2043</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250722000000</DTPOSTED>
+                        <TRNAMT>-1500</TRNAMT>
+                        <FITID>f0ef0dfb95e2cba2</FITID>
+                        <NAME>N A</NAME>
+                        <MEMO>N/A</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250722000000</DTPOSTED>
+                        <TRNAMT>-424</TRNAMT>
+                        <FITID>39e14fd95f6beca6</FITID>
+                        <NAME>PONDMEDICS INCOR</NAME>
+                        <MEMO>SALE PONDMEDICS INCOR</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250723000000</DTPOSTED>
+                        <TRNAMT>-900</TRNAMT>
+                        <FITID>c48321cfa61b2b1a</FITID>
+                        <CHECKNUM>2027</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2027</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250723000000</DTPOSTED>
+                        <TRNAMT>-147</TRNAMT>
+                        <FITID>99255e8d6f7ef8a8</FITID>
+                        <NAME>DFSPAYMENT DFSDIRECTPAYMENT</NAME>
+                        <MEMO>DFSPAYMENT DFSDIRECTPAYMENT 025204009870498CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250724000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>abac3f69b0ff9c23</FITID>
+                        <NAME>PAYMT BARCLAYS DE</NAME>
+                        <MEMO>BILL PAYMT BARCLAYS BANK DE 025184005013546CCD 025205000269677PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250725000000</DTPOSTED>
+                        <TRNAMT>-200</TRNAMT>
+                        <FITID>c170b8a9ec963f7d</FITID>
+                        <NAME>CREDITCARD BARCLAYCARD US</NAME>
+                        <MEMO>CREDITCARD BARCLAYCARD US 025206000605016TEL</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250725000000</DTPOSTED>
+                        <TRNAMT>-424</TRNAMT>
+                        <FITID>7cc54d313e56f41e</FITID>
+                        <NAME>PONDMEDICS INCOR</NAME>
+                        <MEMO>SALE PONDMEDICS INCOR 025206000501855CCD 025190006125188WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250728000000</DTPOSTED>
+                        <TRNAMT>-2000</TRNAMT>
+                        <FITID>fdc50bed86eda0e9</FITID>
+                        <CHECKNUM>2030</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2030</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250728000000</DTPOSTED>
+                        <TRNAMT>-138.85</TRNAMT>
+                        <FITID>585c53478a38afa0</FITID>
+                        <CHECKNUM>2031</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2031</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250728000000</DTPOSTED>
+                        <TRNAMT>-67.81</TRNAMT>
+                        <FITID>84afc6f8a1a9e42d</FITID>
+                        <CHECKNUM>2039</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2039</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250728000000</DTPOSTED>
+                        <TRNAMT>-348.72</TRNAMT>
+                        <FITID>9aa6f0cd6e09389d</FITID>
+                        <CHECKNUM>2040</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2040</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250728000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>975fc291929f2777</FITID>
+                        <NAME>CHANNEL OLB XFER TO</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT 025190006148388WEB OLB XFER TO 8853</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250728000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>4a4e1427fe6fa025</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250728000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>a8acd5f2a95d3fd8</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250728000000</DTPOSTED>
+                        <TRNAMT>-3000</TRNAMT>
+                        <FITID>ffeef4b8b9b5232b</FITID>
+                        <NAME>PMT BK OF AMER VI MC</NAME>
+                        <MEMO>ONLINE PMT BK OF AMER VI/MC 025209000952879CCD 025190006116295WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250728000000</DTPOSTED>
+                        <TRNAMT>-450</TRNAMT>
+                        <FITID>3c524505f5030265</FITID>
+                        <NAME>FORCE PD</NAME>
+                        <MEMO>FORCE PD CHECK 1899 F250714051200446100C</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250730000000</DTPOSTED>
+                        <TRNAMT>-284.75</TRNAMT>
+                        <FITID>7adf3df391482125</FITID>
+                        <NAME>PAYMT JCREW SYNCB</NAME>
+                        <MEMO>BILL PAYMT J.CREW/SYNCB 025190006058097WEB 025211001720441PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250731000000</DTPOSTED>
+                        <TRNAMT>-2485.23</TRNAMT>
+                        <FITID>9c5b29d9ac795a62</FITID>
+                        <CHECKNUM>2023</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2023 *</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250731000000</DTPOSTED>
+                        <TRNAMT>-1673.38</TRNAMT>
+                        <FITID>28da9285893aed63</FITID>
+                        <CHECKNUM>2017</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2017 *</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250731000000</DTPOSTED>
+                        <TRNAMT>-2029</TRNAMT>
+                        <FITID>5c07c8f884896125</FITID>
+                        <NAME>TAXES PAYCHEX TPS</NAME>
+                        <MEMO>TAXES PAYCHEX TPS 025211001853933CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250731000000</DTPOSTED>
+                        <TRNAMT>-6926.73</TRNAMT>
+                        <FITID>179dd3f450b6b1e3</FITID>
+                        <NAME>MTG PMT MIDWEST LOAN</NAME>
+                        <MEMO>MTG PMT MIDWEST LOAN 025212002388698WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250731000000</DTPOSTED>
+                        <TRNAMT>-7364.57</TRNAMT>
+                        <FITID>838d9cccb9d11334</FITID>
+                        <NAME>PAYROLL PAYCHEX INC</NAME>
+                        <MEMO>PAYROLL PAYCHEX INC. F250725051600004950C 025211001853931CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250801000000</DTPOSTED>
+                        <TRNAMT>-180.18</TRNAMT>
+                        <FITID>c66dfbf59cd75059</FITID>
+                        <NAME>INVOICE PAYCHEX EIB</NAME>
+                        <MEMO>INVOICE PAYCHEX EIB 025212002291181CCD 025216003140280PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250801000000</DTPOSTED>
+                        <TRNAMT>-731</TRNAMT>
+                        <FITID>ab5bd127b871a6ea</FITID>
+                        <NAME>SBA EIDL LOAN</NAME>
+                        <MEMO>PAYMENT SBA EIDL LOAN</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250804000000</DTPOSTED>
+                        <TRNAMT>-73</TRNAMT>
+                        <FITID>1c2c5b6b95d893c4</FITID>
+                        <NAME>DELL BUSINESS CR</NAME>
+                        <MEMO>PAYMENT DELL BUSINESS CR</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250804000000</DTPOSTED>
+                        <TRNAMT>-254.7</TRNAMT>
+                        <FITID>d56927922cc02913</FITID>
+                        <NAME>UTIL PYMT ATMOS ENERGY RCR</NAME>
+                        <MEMO>UTIL PYMT ATMOS ENERGY RCR 025213002600188CCD 025216002898382WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250804000000</DTPOSTED>
+                        <TRNAMT>-1250</TRNAMT>
+                        <FITID>502d764e38e0a90f</FITID>
+                        <NAME>FORCE PD</NAME>
+                        <MEMO>FORCE PD CHECK 1933</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250805000000</DTPOSTED>
+                        <TRNAMT>-542</TRNAMT>
+                        <FITID>4bad716f7c204deb</FITID>
+                        <NAME>MEMBER BENEFITS OLB XFER TO</NAME>
+                        <MEMO>ACH MEMBER BENEFITS 025216003260459PPD OLB XFER TO 8853</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250806000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>e0e2e7680ed2a9f3</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT 025226006243806CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250807000000</DTPOSTED>
+                        <TRNAMT>-3600</TRNAMT>
+                        <FITID>37d82e72f9723488</FITID>
+                        <CHECKNUM>2044</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2044 *</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250807000000</DTPOSTED>
+                        <TRNAMT>-3400</TRNAMT>
+                        <FITID>164167f5e3d49ad8</FITID>
+                        <CHECKNUM>2045</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2045</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250808000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>9a72634f0a7b302e</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250811000000</DTPOSTED>
+                        <TRNAMT>-950</TRNAMT>
+                        <FITID>fc7ed9725d8fe488</FITID>
+                        <CHECKNUM>2046</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2046</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250811000000</DTPOSTED>
+                        <TRNAMT>-62.07</TRNAMT>
+                        <FITID>6b06a9a6eb935737</FITID>
+                        <CHECKNUM>2016</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2016</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250811000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>3ed78c30dae747f6</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250812000000</DTPOSTED>
+                        <TRNAMT>-150</TRNAMT>
+                        <FITID>0802cae24e8e9158</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250813000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>9dd782a3a0033062</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250814000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>da9f38ee65354646</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250814000000</DTPOSTED>
+                        <TRNAMT>-40</TRNAMT>
+                        <FITID>c98ae4ca848e20db</FITID>
+                        <NAME>PAYMT SYNCHRONY RFS</NAME>
+                        <MEMO>BILL PAYMT SYNCHRONY RFS</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250814000000</DTPOSTED>
+                        <TRNAMT>-1577.91</TRNAMT>
+                        <FITID>25e2e9633fa19702</FITID>
+                        <NAME>GMF Pymt GM Financial</NAME>
+                        <MEMO>GMF Pymt GM Financial 025226006141174WEB 025233008022771WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250814000000</DTPOSTED>
+                        <TRNAMT>-1823.06</TRNAMT>
+                        <FITID>d4e0f84693e93340</FITID>
+                        <NAME>PAYMT FORD CO OLB XFER TO</NAME>
+                        <MEMO>BILL PAYMT FORD CREDIT CO 025226006138197PPD OLB XFER TO 8853</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250814000000</DTPOSTED>
+                        <TRNAMT>-2020.92</TRNAMT>
+                        <FITID>6262b348f05a4041</FITID>
+                        <NAME>TAXES PAYCHEX TPS</NAME>
+                        <MEMO>TAXES PAYCHEX TPS</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250814000000</DTPOSTED>
+                        <TRNAMT>-3000</TRNAMT>
+                        <FITID>4c8947a65cbf31a8</FITID>
+                        <NAME>EPAY CHASE CRD</NAME>
+                        <MEMO>EPAY CHASE CREDIT CRD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250814000000</DTPOSTED>
+                        <TRNAMT>-3690.81</TRNAMT>
+                        <FITID>a8bfecbe63219e7b</FITID>
+                        <NAME>CITI OLB XFER TO</NAME>
+                        <MEMO>PAYMENT CITI CARD ONLINE 025226006148876WEB OLB XFER TO 8853</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250814000000</DTPOSTED>
+                        <TRNAMT>-5000</TRNAMT>
+                        <FITID>4c3ec61029122d4f</FITID>
+                        <NAME>E DISCOVER</NAME>
+                        <MEMO>E-PAYMENT DISCOVER 025226006208278WEB 025239009624652CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250814000000</DTPOSTED>
+                        <TRNAMT>-6000</TRNAMT>
+                        <FITID>ba4efe1ee38acd3d</FITID>
+                        <NAME>EPAY CHASE CRD</NAME>
+                        <MEMO>EPAY CHASE CREDIT CRD 025225005927189WEB 025239009624648CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250814000000</DTPOSTED>
+                        <TRNAMT>-7364.56</TRNAMT>
+                        <FITID>c06d9b7c63c70b2c</FITID>
+                        <NAME>PAYROLL PAYCHEX INC</NAME>
+                        <MEMO>PAYROLL PAYCHEX INC</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250814000000</DTPOSTED>
+                        <TRNAMT>-10000</TRNAMT>
+                        <FITID>236b73425306d8e0</FITID>
+                        <NAME>PMT BK OF AMER VI MC</NAME>
+                        <MEMO>ONLINE PMT BK OF AMER VI/MC</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250815000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>85b103cedf86566c</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250815000000</DTPOSTED>
+                        <TRNAMT>-180.18</TRNAMT>
+                        <FITID>1b8e81746eb48476</FITID>
+                        <NAME>INVOICE PAYCHEX EIB</NAME>
+                        <MEMO>INVOICE PAYCHEX EIB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250815000000</DTPOSTED>
+                        <TRNAMT>-375</TRNAMT>
+                        <FITID>29eaae1343988203</FITID>
+                        <NAME>PAYMT SHELL</NAME>
+                        <MEMO>BILL PAYMT SHELL 025227006520290PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250815000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>12be4555402cbdd7</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250818000000</DTPOSTED>
+                        <TRNAMT>-465</TRNAMT>
+                        <FITID>500bea50a03fc46e</FITID>
+                        <CHECKNUM>2048</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2048</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250818000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>4e4443adc5fa6006</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250818000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>9a92d314e5fd65c8</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250819000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>e0ad06cb25e3f9b6</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250821000000</DTPOSTED>
+                        <TRNAMT>-1000</TRNAMT>
+                        <FITID>7a794399567d2f91</FITID>
+                        <NAME>N A</NAME>
+                        <MEMO>N/A</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250821000000</DTPOSTED>
+                        <TRNAMT>-150</TRNAMT>
+                        <FITID>957b0705e356b855</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250821000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>7f1e1a48c295adb9</FITID>
+                        <NAME>CHANNEL OLB XFER TO</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT 025226006138215PPD OLB XFER TO 8853</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250821000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>19484690d80e528f</FITID>
+                        <NAME>EPAY CHASE CRD</NAME>
+                        <MEMO>EPAY CHASE CREDIT CRD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250822000000</DTPOSTED>
+                        <TRNAMT>-5000</TRNAMT>
+                        <FITID>b8a37d51195d973e</FITID>
+                        <CHECKNUM>2047</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2047</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250822000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>1aed2f5359a1ef42</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250825000000</DTPOSTED>
+                        <TRNAMT>-150</TRNAMT>
+                        <FITID>3c03e36d92acda4f</FITID>
+                        <NAME>CHANNEL OLB XFER TO</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT 025225005845571CCD OLB XFER TO 8853</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250826000000</DTPOSTED>
+                        <TRNAMT>-150</TRNAMT>
+                        <FITID>0655d95dd6b7c9b7</FITID>
+                        <NAME>CHANNEL OLB XFER TO</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT 025225005927188WEB OLB XFER TO 8853</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250828000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>9b3ae1c0c6986a54</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250828000000</DTPOSTED>
+                        <TRNAMT>-2004.72</TRNAMT>
+                        <FITID>02a499347a9492d6</FITID>
+                        <NAME>TAXES PAYCHEX TPS</NAME>
+                        <MEMO>TAXES PAYCHEX TPS</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250828000000</DTPOSTED>
+                        <TRNAMT>-7364.57</TRNAMT>
+                        <FITID>f1f0ea2e55148807</FITID>
+                        <NAME>PAYROLL PAYCHEX INC</NAME>
+                        <MEMO>PAYROLL PAYCHEX INC</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250829000000</DTPOSTED>
+                        <TRNAMT>-7500</TRNAMT>
+                        <FITID>381c53ecc5a141e7</FITID>
+                        <CHECKNUM>2050</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2050 *</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250829000000</DTPOSTED>
+                        <TRNAMT>-180.18</TRNAMT>
+                        <FITID>1916266d9ed5290f</FITID>
+                        <NAME>INVOICE PAYCHEX EIB</NAME>
+                        <MEMO>INVOICE PAYCHEX EIB 025225005829181CCD 025240010062288CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250829000000</DTPOSTED>
+                        <TRNAMT>-424</TRNAMT>
+                        <FITID>0e43a903d8fe86b1</FITID>
+                        <NAME>PONDMEDICS INCOR</NAME>
+                        <MEMO>SALE PONDMEDICS INCOR 025225005998732CCD 025241000317345CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250902000000</DTPOSTED>
+                        <TRNAMT>-1000</TRNAMT>
+                        <FITID>6fc6b09ab25d009f</FITID>
+                        <CHECKNUM>2051</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2051 *</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250902000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>3dbcd664e2601180</FITID>
+                        <NAME>CHANNEL OLB XFER TO</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT OLB XFER TO 8853</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250902000000</DTPOSTED>
+                        <TRNAMT>-300</TRNAMT>
+                        <FITID>f2ac1e058af8dfc3</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250902000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>2a9fecc653c80f98</FITID>
+                        <NAME>CHANNEL OLB XFER TO</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT OLB XFER TO 8853</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250902000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>a2a030f3d97c2f7c</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250902000000</DTPOSTED>
+                        <TRNAMT>-53.56</TRNAMT>
+                        <FITID>e236dafeba0fe2f1</FITID>
+                        <NAME>LEASECHG DELL FINANCIAL S</NAME>
+                        <MEMO>LEASECHG DELL FINANCIAL S</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250902000000</DTPOSTED>
+                        <TRNAMT>-71</TRNAMT>
+                        <FITID>eb3f00fa0c2b59e3</FITID>
+                        <NAME>DELL BUSINESS CR</NAME>
+                        <MEMO>PAYMENT DELL BUSINESS CR</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250902000000</DTPOSTED>
+                        <TRNAMT>-396.94</TRNAMT>
+                        <FITID>4c36070621e5aa8f</FITID>
+                        <NAME>PAYMT TRUGREEN</NAME>
+                        <MEMO>BILL PAYMT TRUGREEN</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250902000000</DTPOSTED>
+                        <TRNAMT>-1577.91</TRNAMT>
+                        <FITID>72cac28c0f7042e9</FITID>
+                        <NAME>GMF Pymt GM Financial</NAME>
+                        <MEMO>GMF Pymt GM Financial</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250903000000</DTPOSTED>
+                        <TRNAMT>-260</TRNAMT>
+                        <FITID>a6dfaad690d1da06</FITID>
+                        <CHECKNUM>2049</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2049</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250903000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>21c5ce24a8f0e2dc</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250903000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>4d6266884d6cc10e</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250903000000</DTPOSTED>
+                        <TRNAMT>-6926.73</TRNAMT>
+                        <FITID>469906a6f8d314df</FITID>
+                        <NAME>MTG PMT MIDWEST LOAN</NAME>
+                        <MEMO>MTG PMT MIDWEST LOAN</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250904000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>10168739db23897d</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250905000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>3229b5f187c76a6b</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250905000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>9750e90c851adb05</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250905000000</DTPOSTED>
+                        <TRNAMT>-64.12</TRNAMT>
+                        <FITID>0b7f5612b830b15d</FITID>
+                        <NAME>UTIL PYMT ATMOS ENERGY RCR</NAME>
+                        <MEMO>UTIL PYMT ATMOS ENERGY RCR</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250905000000</DTPOSTED>
+                        <TRNAMT>-542</TRNAMT>
+                        <FITID>9115c6c4c3b03063</FITID>
+                        <NAME>MEMBER BENEFITS</NAME>
+                        <MEMO>ACH MEMBER BENEFITS</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250908000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>7baa957b2460e604</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250908000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>8f7fcab2b9da41dd</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250908000000</DTPOSTED>
+                        <TRNAMT>-350</TRNAMT>
+                        <FITID>308b05ccf7bd1084</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250909000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>78298f5451a13028</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250909000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>23855a89fdb3c61f</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250909000000</DTPOSTED>
+                        <TRNAMT>-465.08</TRNAMT>
+                        <FITID>2511ef4076c18cc8</FITID>
+                        <NAME>PMT SHELL</NAME>
+                        <MEMO>ONLINE PMT SHELL</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250910000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>33d5784ae97bafa4</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250911000000</DTPOSTED>
+                        <TRNAMT>-3400</TRNAMT>
+                        <FITID>42954d5c99565592</FITID>
+                        <CHECKNUM>2052</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2052</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250912000000</DTPOSTED>
+                        <TRNAMT>-2000.97</TRNAMT>
+                        <FITID>2c4104575c4ea96e</FITID>
+                        <NAME>TAXES PAYCHEX TPS</NAME>
+                        <MEMO>TAXES PAYCHEX TPS</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250912000000</DTPOSTED>
+                        <TRNAMT>-7364.57</TRNAMT>
+                        <FITID>8aae06add00b8ba1</FITID>
+                        <NAME>PAYROLL PAYCHEX INC</NAME>
+                        <MEMO>PAYROLL PAYCHEX INC</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250915000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>210c53588751ddd3</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250915000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>f2b069439084290b</FITID>
+                        <NAME>CHANNEL OLB XFER TO</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT 025245001227771CCD OLB XFER TO 8853</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250915000000</DTPOSTED>
+                        <TRNAMT>-180.18</TRNAMT>
+                        <FITID>3d21fcf02214a2f0</FITID>
+                        <NAME>INVOICE PAYCHEX EIB</NAME>
+                        <MEMO>INVOICE PAYCHEX EIB 025245000889696PPD 025255004443911CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250915000000</DTPOSTED>
+                        <TRNAMT>-211.09</TRNAMT>
+                        <FITID>bd66746c2df700f2</FITID>
+                        <NAME>PURE PH POOL SER</NAME>
+                        <MEMO>SALE PURE PH POOL SER 025245000734957PPD 025258004727458CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250915000000</DTPOSTED>
+                        <TRNAMT>-2000</TRNAMT>
+                        <FITID>fb5701a8dd8fbe0a</FITID>
+                        <NAME>EPAY CHASE CRD</NAME>
+                        <MEMO>EPAY CHASE CREDIT CRD 025245000962750WEB 025258004823898WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250915000000</DTPOSTED>
+                        <TRNAMT>-4000</TRNAMT>
+                        <FITID>0cb0b7447d3d6570</FITID>
+                        <NAME>PMT BK OF AMER VI MC</NAME>
+                        <MEMO>ONLINE PMT BK OF AMER VI/MC 025258004807834CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250915000000</DTPOSTED>
+                        <TRNAMT>-4000</TRNAMT>
+                        <FITID>0c631dce6e383994</FITID>
+                        <NAME>CITI</NAME>
+                        <MEMO>PAYMENT CITI CARD ONLINE 025258004895588WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250915000000</DTPOSTED>
+                        <TRNAMT>-5000</TRNAMT>
+                        <FITID>696346f51d968aca</FITID>
+                        <NAME>EPAY CHASE CRD</NAME>
+                        <MEMO>EPAY CHASE CREDIT CRD 025246001769513WEB 025258004823901WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250915000000</DTPOSTED>
+                        <TRNAMT>-5000</TRNAMT>
+                        <FITID>f4ea7d39168fbfb3</FITID>
+                        <NAME>E DISCOVER</NAME>
+                        <MEMO>E-PAYMENT DISCOVER 025258004745711WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250916000000</DTPOSTED>
+                        <TRNAMT>-300</TRNAMT>
+                        <FITID>a34710ad0da384de</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250916000000</DTPOSTED>
+                        <TRNAMT>-100</TRNAMT>
+                        <FITID>d63b197424182f51</FITID>
+                        <NAME>PAYMT NORDSTROM VISA</NAME>
+                        <MEMO>BILL PAYMT NORDSTROM VISA 025259005173293PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250916000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>b8e098fba9396c97</FITID>
+                        <NAME>PAYMT BARCLAYS DE</NAME>
+                        <MEMO>BILL PAYMT BARCLAYS BANK DE 025248002411051WEB 025259005173240PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250916000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>7a3aaf2b36af0925</FITID>
+                        <NAME>PAYMT JCREW SYNCB</NAME>
+                        <MEMO>BILL PAYMT J.CREW/SYNCB 025259005173289PPD 025247002112255PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250916000000</DTPOSTED>
+                        <TRNAMT>-1000</TRNAMT>
+                        <FITID>cec2bebbf35ed92a</FITID>
+                        <NAME>PAYMT DILLARDS</NAME>
+                        <MEMO>BILL PAYMT DILLARD'S 025259005173264PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250916000000</DTPOSTED>
+                        <TRNAMT>-1823.06</TRNAMT>
+                        <FITID>08b28594a9715b84</FITID>
+                        <NAME>FORDCREDIT LINCOLN AFS</NAME>
+                        <MEMO>FORDCREDIT LINCOLN AFS 025259005274869WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250917000000</DTPOSTED>
+                        <TRNAMT>-706.87</TRNAMT>
+                        <FITID>d76120533627c87f</FITID>
+                        <NAME>SOUTHERN SIGN SE</NAME>
+                        <MEMO>SALE SOUTHERN SIGN SE 025260005476586CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250917000000</DTPOSTED>
+                        <TRNAMT>-731</TRNAMT>
+                        <FITID>6a0340188e70fe92</FITID>
+                        <NAME>SBA EIDL LOAN</NAME>
+                        <MEMO>PAYMENT SBA EIDL LOAN 025260005535542CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250918000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>ed07087a5d1047cd</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250919000000</DTPOSTED>
+                        <TRNAMT>-400</TRNAMT>
+                        <FITID>40d02bf5aa2f9682</FITID>
+                        <CHECKNUM>2059</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2059 *</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250919000000</DTPOSTED>
+                        <TRNAMT>-650</TRNAMT>
+                        <FITID>a66d3231189a2fde</FITID>
+                        <CHECKNUM>2060</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2060</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250919000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>cb0091acd4a53a9b</FITID>
+                        <NAME>CHANNEL OLB XFER TO</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT 025252003289410WEB OLB XFER TO 8853</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250922000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>574064986eb69041</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250922000000</DTPOSTED>
+                        <TRNAMT>-236.91</TRNAMT>
+                        <FITID>806982ec2a7dba7b</FITID>
+                        <NAME>INS PREM UNITED OF OMAHA</NAME>
+                        <MEMO>INS PREM UNITED OF OMAHA 025254004061550CCD 025262006376263PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250923000000</DTPOSTED>
+                        <TRNAMT>-150</TRNAMT>
+                        <FITID>456f50c49f07ab09</FITID>
+                        <CHECKNUM>2054</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2054</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250924000000</DTPOSTED>
+                        <TRNAMT>-150</TRNAMT>
+                        <FITID>5daf1830f63e7312</FITID>
+                        <NAME>CHANNEL OLB XFER TO</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT 025254004049934CCD OLB XFER TO 8853</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250924000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>fa5fc9bd129de600</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT 025269008034717WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250924000000</DTPOSTED>
+                        <TRNAMT>-715.69</TRNAMT>
+                        <FITID>6f318e4a0e5f1675</FITID>
+                        <NAME>Premium MANHATTANLIFE</NAME>
+                        <MEMO>Premium MANHATTANLIFE 025267007370652PPD 025269008122700CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250925000000</DTPOSTED>
+                        <TRNAMT>-150</TRNAMT>
+                        <FITID>05f1234b6a48f3b6</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250925000000</DTPOSTED>
+                        <TRNAMT>-150</TRNAMT>
+                        <FITID>751d0f24769c8af8</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250925000000</DTPOSTED>
+                        <TRNAMT>-150</TRNAMT>
+                        <FITID>88b57283a6ff6d64</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250926000000</DTPOSTED>
+                        <TRNAMT>-194.18</TRNAMT>
+                        <FITID>2ec6713c7b7dee07</FITID>
+                        <CHECKNUM>2053</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2053</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250926000000</DTPOSTED>
+                        <TRNAMT>-424</TRNAMT>
+                        <FITID>d96537d66fd63b7f</FITID>
+                        <NAME>PONDMEDICS INCOR</NAME>
+                        <MEMO>SALE PONDMEDICS INCOR</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250926000000</DTPOSTED>
+                        <TRNAMT>-731</TRNAMT>
+                        <FITID>128b6e39005f8000</FITID>
+                        <NAME>SBA EIDL LOAN</NAME>
+                        <MEMO>PAYMENT SBA EIDL LOAN</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250926000000</DTPOSTED>
+                        <TRNAMT>-150</TRNAMT>
+                        <FITID>20fb9161c166471b</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250926000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>f4f6755d0d442de8</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250929000000</DTPOSTED>
+                        <TRNAMT>-1250</TRNAMT>
+                        <FITID>ceacb82a02be093b</FITID>
+                        <CHECKNUM>2057</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2057 *</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250929000000</DTPOSTED>
+                        <TRNAMT>-100</TRNAMT>
+                        <FITID>4efee052f013008e</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250929000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>51717e505507820e</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250930000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>d9c6bcccf8ebc023</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250930000000</DTPOSTED>
+                        <TRNAMT>-2000.98</TRNAMT>
+                        <FITID>4eeafde84e9970a8</FITID>
+                        <NAME>TAXES PAYCHEX TPS</NAME>
+                        <MEMO>TAXES PAYCHEX TPS 025272008685115CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20250930000000</DTPOSTED>
+                        <TRNAMT>-7364.56</TRNAMT>
+                        <FITID>b471c963011b5816</FITID>
+                        <NAME>PAYROLL PAYCHEX INC</NAME>
+                        <MEMO>PAYROLL PAYCHEX INC 025272008685113CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251001000000</DTPOSTED>
+                        <TRNAMT>-1000</TRNAMT>
+                        <FITID>ecab7920f073f4f7</FITID>
+                        <CHECKNUM>2062</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2062</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251001000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>9a8772a4b97274e4</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251001000000</DTPOSTED>
+                        <TRNAMT>-180.18</TRNAMT>
+                        <FITID>af7ef16d3b2017c8</FITID>
+                        <NAME>INVOICE PAYCHEX EIB</NAME>
+                        <MEMO>INVOICE PAYCHEX EIB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251002000000</DTPOSTED>
+                        <TRNAMT>-3400</TRNAMT>
+                        <FITID>348f3c86788ee6fb</FITID>
+                        <CHECKNUM>2063</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2063</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251002000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>db954b4982e62199</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251002000000</DTPOSTED>
+                        <TRNAMT>-1823.06</TRNAMT>
+                        <FITID>07595dce38ba6283</FITID>
+                        <NAME>FORDCREDIT LINCOLN AFS</NAME>
+                        <MEMO>FORDCREDIT LINCOLN AFS 025275009934549WEB 025287002945167WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251002000000</DTPOSTED>
+                        <TRNAMT>-6926.73</TRNAMT>
+                        <FITID>70fffb24b86ec95a</FITID>
+                        <NAME>MTG PMT MIDWEST LOAN</NAME>
+                        <MEMO>MTG PMT MIDWEST LOAN</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251003000000</DTPOSTED>
+                        <TRNAMT>-536.58</TRNAMT>
+                        <FITID>bfdcc508825be00f</FITID>
+                        <CHECKNUM>2033</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2033 *</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251003000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>2405701c8a8a733b</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251003000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>7a9140e3188b364f</FITID>
+                        <NAME>EPAY CHASE CRD</NAME>
+                        <MEMO>EPAY CHASE CREDIT CRD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251006000000</DTPOSTED>
+                        <TRNAMT>-1012.5</TRNAMT>
+                        <FITID>e8e487403b64bb3e</FITID>
+                        <CHECKNUM>2055</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2055 *</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251006000000</DTPOSTED>
+                        <TRNAMT>-25000</TRNAMT>
+                        <FITID>1762705f5458d792</FITID>
+                        <NAME>OUTGOING WIRE</NAME>
+                        <MEMO>OUTGOING WIRE</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251006000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>d5df99d8c5345a53</FITID>
+                        <NAME>N A</NAME>
+                        <MEMO>N/A</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251006000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>26d54b59a34d0742</FITID>
+                        <NAME>N A</NAME>
+                        <MEMO>N/A</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251006000000</DTPOSTED>
+                        <TRNAMT>-70</TRNAMT>
+                        <FITID>da2df48e6fdaef72</FITID>
+                        <NAME>DELL BUSINESS CR</NAME>
+                        <MEMO>PAYMENT DELL BUSINESS CR 025276000419730PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251006000000</DTPOSTED>
+                        <TRNAMT>-447.4</TRNAMT>
+                        <FITID>b305dbacb72be9fa</FITID>
+                        <NAME>UTIL PYMT ATMOS ENERGY RCR</NAME>
+                        <MEMO>UTIL PYMT ATMOS ENERGY RCR 025288003369042PPD 025279000641630WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251006000000</DTPOSTED>
+                        <TRNAMT>-542</TRNAMT>
+                        <FITID>bae7b6f33475dad0</FITID>
+                        <NAME>MEMBER BENEFITS</NAME>
+                        <MEMO>ACH MEMBER BENEFITS 025276000447100PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251006000000</DTPOSTED>
+                        <TRNAMT>-30</TRNAMT>
+                        <FITID>dd0a5b3d6c27cff9</FITID>
+                        <NAME>WIRE TFR FEE</NAME>
+                        <MEMO>WIRE TFR FEE 025288003473149WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251007000000</DTPOSTED>
+                        <TRNAMT>-350</TRNAMT>
+                        <FITID>d9f69741a54d7d0e</FITID>
+                        <CHECKNUM>2061</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2061 *</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251007000000</DTPOSTED>
+                        <TRNAMT>-150</TRNAMT>
+                        <FITID>6f590e60e254f1ff</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251007000000</DTPOSTED>
+                        <TRNAMT>-198.47</TRNAMT>
+                        <FITID>b5abd8b6f07f4acb</FITID>
+                        <NAME>PAYMT TRUGREEN</NAME>
+                        <MEMO>BILL PAYMT TRUGREEN</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251007000000</DTPOSTED>
+                        <TRNAMT>-392.14</TRNAMT>
+                        <FITID>369137eb50de18f6</FITID>
+                        <NAME>PAYMT DILLARDS</NAME>
+                        <MEMO>BILL PAYMT DILLARD'S</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251007000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>d244241495694a97</FITID>
+                        <NAME>PAYMT JCREW SYNCB</NAME>
+                        <MEMO>BILL PAYMT J.CREW/SYNCB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251008000000</DTPOSTED>
+                        <TRNAMT>-227.26</TRNAMT>
+                        <FITID>3712a981d8a10a49</FITID>
+                        <CHECKNUM>2</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251008000000</DTPOSTED>
+                        <TRNAMT>-150</TRNAMT>
+                        <FITID>72bf6176cea420f4</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251008000000</DTPOSTED>
+                        <TRNAMT>-150</TRNAMT>
+                        <FITID>9905ae312a613ce5</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251009000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>4f47be414471c478</FITID>
+                        <CHECKNUM>2056</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2056</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251010000000</DTPOSTED>
+                        <TRNAMT>-150</TRNAMT>
+                        <FITID>241ae93ed50db225</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT 025293004506483PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251010000000</DTPOSTED>
+                        <TRNAMT>-150</TRNAMT>
+                        <FITID>2a320afd79d153c4</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251014000000</DTPOSTED>
+                        <TRNAMT>-188.96</TRNAMT>
+                        <FITID>e7930f5d101f477f</FITID>
+                        <CHECKNUM>1</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>1</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251014000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>28290346bfcde467</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251014000000</DTPOSTED>
+                        <TRNAMT>-750</TRNAMT>
+                        <FITID>ae9dbdf6d1c14a4d</FITID>
+                        <NAME>CHANNEL OLB XFER TO</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT 025273009118888CCD OLB XFER TO 8853</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251014000000</DTPOSTED>
+                        <TRNAMT>-830.95</TRNAMT>
+                        <FITID>e7d7a3c2a1e04322</FITID>
+                        <NAME>EPAY CHASE CRD</NAME>
+                        <MEMO>EPAY CHASE CREDIT CRD 025287002791762WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251014000000</DTPOSTED>
+                        <TRNAMT>-1577.91</TRNAMT>
+                        <FITID>4a2d4c9cd71b2b42</FITID>
+                        <NAME>GMF Pymt GM Financial</NAME>
+                        <MEMO>GMF Pymt GM Financial</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251014000000</DTPOSTED>
+                        <TRNAMT>-2000.96</TRNAMT>
+                        <FITID>b70a4a089077ef89</FITID>
+                        <NAME>TAXES PAYCHEX TPS</NAME>
+                        <MEMO>TAXES PAYCHEX TPS 025275010097249WEB 025283002414665CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251014000000</DTPOSTED>
+                        <TRNAMT>-3000</TRNAMT>
+                        <FITID>5b5b683c088f2b75</FITID>
+                        <NAME>EPAY CHASE CRD</NAME>
+                        <MEMO>EPAY CHASE CREDIT CRD 025287002791761WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251014000000</DTPOSTED>
+                        <TRNAMT>-5000</TRNAMT>
+                        <FITID>a07e713b7b609f86</FITID>
+                        <NAME>PMT BK OF AMER VI MC</NAME>
+                        <MEMO>ONLINE PMT BK OF AMER VI/MC 025276000349129WEB 025287002770220CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251014000000</DTPOSTED>
+                        <TRNAMT>-5000</TRNAMT>
+                        <FITID>01c08f4be76afdc1</FITID>
+                        <NAME>EPAY CHASE CRD CHANNEL</NAME>
+                        <MEMO>EPAY CHASE CREDIT CRD CHANNEL TRANSFER DEBIT 025287002791764WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251014000000</DTPOSTED>
+                        <TRNAMT>-7364.58</TRNAMT>
+                        <FITID>0fcdf49d33066bd3</FITID>
+                        <NAME>PAYROLL PAYCHEX INC CHANNEL</NAME>
+                        <MEMO>PAYROLL PAYCHEX INC CHANNEL TRANSFER DEBIT 025283002401859CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251014000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>c4f911fcfd4b3554</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251015000000</DTPOSTED>
+                        <TRNAMT>-180.18</TRNAMT>
+                        <FITID>1f33c18be322c0a7</FITID>
+                        <NAME>INVOICE PAYCHEX EIB</NAME>
+                        <MEMO>INVOICE PAYCHEX EIB 025287003032153CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251015000000</DTPOSTED>
+                        <TRNAMT>-198.47</TRNAMT>
+                        <FITID>41cde4b8770d5cfb</FITID>
+                        <NAME>PAYMT TRUGREEN</NAME>
+                        <MEMO>BILL PAYMT TRUGREEN</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251015000000</DTPOSTED>
+                        <TRNAMT>-4000</TRNAMT>
+                        <FITID>dd5f56428438be9c</FITID>
+                        <NAME>CITI</NAME>
+                        <MEMO>PAYMENT CITI CARD ONLINE 025288003297963WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251015000000</DTPOSTED>
+                        <TRNAMT>-10000</TRNAMT>
+                        <FITID>ae75985a38d5dcb1</FITID>
+                        <NAME>E DISCOVER</NAME>
+                        <MEMO>E-PAYMENT DISCOVER</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251016000000</DTPOSTED>
+                        <TRNAMT>-150</TRNAMT>
+                        <FITID>ef09d750c033b62f</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251016000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>e5b3a81bad7dc8f8</FITID>
+                        <NAME>CHANNEL OLB XFER TO</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT 025280001184114PPD OLB XFER TO 8853</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251017000000</DTPOSTED>
+                        <TRNAMT>-150</TRNAMT>
+                        <FITID>0dfff53e9b24cca6</FITID>
+                        <NAME>CHANNEL OLB XFER TO</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT 025280001184059PPD OLB XFER TO 8853</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251020000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>071d2a34ddaa5e2c</FITID>
+                        <NAME>CHANNEL OLB XFER TO</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT 025280001184085PPD OLB XFER TO 8853</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251020000000</DTPOSTED>
+                        <TRNAMT>-300</TRNAMT>
+                        <FITID>268ccfc24d7e0568</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251020000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>f2d118bd01a66e88</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251020000000</DTPOSTED>
+                        <TRNAMT>-454.18</TRNAMT>
+                        <FITID>9cc8c1e88165f387</FITID>
+                        <NAME>PAYMT SHELL</NAME>
+                        <MEMO>BILL PAYMT SHELL</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251021000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>6807fb75262f4002</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251022000000</DTPOSTED>
+                        <TRNAMT>-10130.21</TRNAMT>
+                        <FITID>f7cd01a930137e16</FITID>
+                        <CHECKNUM>2064</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2064</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251022000000</DTPOSTED>
+                        <TRNAMT>-450</TRNAMT>
+                        <FITID>0b539e857e78f641</FITID>
+                        <CHECKNUM>2004</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2004 *</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251022000000</DTPOSTED>
+                        <TRNAMT>-10000</TRNAMT>
+                        <FITID>7ec9c4bb2b2c4bb8</FITID>
+                        <CHECKNUM>2067</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2067</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251022000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>e1b512b9c4dfa6b9</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251022000000</DTPOSTED>
+                        <TRNAMT>-236.91</TRNAMT>
+                        <FITID>543b0366427cac4b</FITID>
+                        <NAME>INS PREM UNITED OF OMAHA OLB XF</NAME>
+                        <MEMO>INS PREM UNITED OF OMAHA 025294005152616PPD OLB XFER TO 8853</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251023000000</DTPOSTED>
+                        <TRNAMT>-538.33</TRNAMT>
+                        <FITID>e966af4ef5c8a318</FITID>
+                        <CHECKNUM>2065</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2065</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251023000000</DTPOSTED>
+                        <TRNAMT>-656.25</TRNAMT>
+                        <FITID>be218eb7aa633eee</FITID>
+                        <CHECKNUM>2066</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2066</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251023000000</DTPOSTED>
+                        <TRNAMT>-215</TRNAMT>
+                        <FITID>0355b850fbd4b23e</FITID>
+                        <CHECKNUM>2068</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>2068</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251023000000</DTPOSTED>
+                        <TRNAMT>-150</TRNAMT>
+                        <FITID>032f755aebdcbe60</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251023000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>51bdff76302dad04</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251024000000</DTPOSTED>
+                        <TRNAMT>-215.96</TRNAMT>
+                        <FITID>e29464360a79362e</FITID>
+                        <CHECKNUM>3</CHECKNUM>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>3</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251024000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>5421a66c6a91130f</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT 025301006851120WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251024000000</DTPOSTED>
+                        <TRNAMT>-272.71</TRNAMT>
+                        <FITID>34f571bd10030044</FITID>
+                        <NAME>SUNRUN INC OLB XFER TO</NAME>
+                        <MEMO>8554786786 SUNRUN INC 025297006053437PPD OLB XFER TO 8853</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251024000000</DTPOSTED>
+                        <TRNAMT>-715.69</TRNAMT>
+                        <FITID>f3a9d7ee50011c1a</FITID>
+                        <NAME>Premium MANHATTANLIFE OLB XFER</NAME>
+                        <MEMO>Premium MANHATTANLIFE 025297006040377PPD OLB XFER TO 8853</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251024000000</DTPOSTED>
+                        <TRNAMT>-731</TRNAMT>
+                        <FITID>a82efd2df8540c13</FITID>
+                        <NAME>SBA EIDL LOAN</NAME>
+                        <MEMO>PAYMENT SBA EIDL LOAN</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251027000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>5b148fc2fcd71de5</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT 025302007258691CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251027000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>944ee21beb89a972</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251028000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>ddc71fc30eaf2722</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251028000000</DTPOSTED>
+                        <TRNAMT>-72.55</TRNAMT>
+                        <FITID>ad3c919ed88dfd0a</FITID>
+                        <NAME>EPAY CHASE CRD</NAME>
+                        <MEMO>EPAY CHASE CREDIT CRD 025300006716970WEB</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251028000000</DTPOSTED>
+                        <TRNAMT>-424</TRNAMT>
+                        <FITID>ae6a107cca87e49d</FITID>
+                        <NAME>PONDMEDICS INCOR</NAME>
+                        <MEMO>SALE PONDMEDICS INCOR 025301006757650CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251028000000</DTPOSTED>
+                        <TRNAMT>-500</TRNAMT>
+                        <FITID>c407044a7edd22bb</FITID>
+                        <NAME>CREDITCARD BARCLAYCARD US</NAME>
+                        <MEMO>CREDITCARD BARCLAYCARD US</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251029000000</DTPOSTED>
+                        <TRNAMT>-250</TRNAMT>
+                        <FITID>9f125350f06df816</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251029000000</DTPOSTED>
+                        <TRNAMT>-1000</TRNAMT>
+                        <FITID>a12cae5376cda7b5</FITID>
+                        <NAME>CHANNEL</NAME>
+                        <MEMO>CHANNEL TRANSFER DEBIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251030000000</DTPOSTED>
+                        <TRNAMT>-2000.97</TRNAMT>
+                        <FITID>dfa16265c3c4c1c0</FITID>
+                        <NAME>TAXES PAYCHEX TPS</NAME>
+                        <MEMO>TAXES PAYCHEX TPS 025297005992145CCD 025302007252196CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251030000000</DTPOSTED>
+                        <TRNAMT>-7364.57</TRNAMT>
+                        <FITID>9ab722b9b3e61554</FITID>
+                        <NAME>PAYROLL PAYCHEX INC</NAME>
+                        <MEMO>PAYROLL PAYCHEX INC</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>DEBIT</TRNTYPE>
+                        <DTPOSTED>20251031000000</DTPOSTED>
+                        <TRNAMT>-180.18</TRNAMT>
+                        <FITID>bf89d3d6d753fa86</FITID>
+                        <NAME>INVOICE PAYCHEX EIB</NAME>
+                        <MEMO>INVOICE PAYCHEX EIB 025303007722019CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250605000000</DTPOSTED>
+                        <TRNAMT>24817.78</TRNAMT>
+                        <FITID>bb21e1fa4397d5dd</FITID>
+                        <NAME>CT D trans</NAME>
+                        <MEMO>CT D 2374046 trans</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250610000000</DTPOSTED>
+                        <TRNAMT>10000</TRNAMT>
+                        <FITID>638827d83e92cd5c</FITID>
+                        <NAME>TRNSFR OLB XFER FROM</NAME>
+                        <MEMO>TRNSFR CREDIT OLB XFER FROM 9124</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250611000000</DTPOSTED>
+                        <TRNAMT>0.21</TRNAMT>
+                        <FITID>bfd156dc35654236</FITID>
+                        <NAME>ACCTVERIFY OF AMERICA OLB XFER</NAME>
+                        <MEMO>ACCTVERIFY BANK OF AMERICA OLB XFER FROM 9124 025162008304666CTX</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250611000000</DTPOSTED>
+                        <TRNAMT>0.47</TRNAMT>
+                        <FITID>e669bd9c39a5bf3b</FITID>
+                        <NAME>ACCTVERIFY OF AMERICA OLB XFER</NAME>
+                        <MEMO>ACCTVERIFY BANK OF AMERICA OLB XFER FROM 9124 025162008304667CTX</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250611000000</DTPOSTED>
+                        <TRNAMT>5000</TRNAMT>
+                        <FITID>0de6814156d1e32d</FITID>
+                        <NAME>TRNSFR OLB XFER FROM</NAME>
+                        <MEMO>TRNSFR CREDIT OLB XFER FROM 9124</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250616000000</DTPOSTED>
+                        <TRNAMT>5000</TRNAMT>
+                        <FITID>cf18334907957c57</FITID>
+                        <NAME>CT D OLB XFER FROM</NAME>
+                        <MEMO>CT D 2382803 OLB XFER FROM 9124</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250617000000</DTPOSTED>
+                        <TRNAMT>10000</TRNAMT>
+                        <FITID>0a213a0764474508</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250620000000</DTPOSTED>
+                        <TRNAMT>10000</TRNAMT>
+                        <FITID>8481a45af6fe3d66</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250623000000</DTPOSTED>
+                        <TRNAMT>25000</TRNAMT>
+                        <FITID>e13be57cb54ccf5a</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250630000000</DTPOSTED>
+                        <TRNAMT>10000</TRNAMT>
+                        <FITID>37217cd0dbe7f23c</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250630000000</DTPOSTED>
+                        <TRNAMT>20000</TRNAMT>
+                        <FITID>5923f02e06a968aa</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250703000000</DTPOSTED>
+                        <TRNAMT>10000</TRNAMT>
+                        <FITID>94f4502b9fe3099f</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT 025196007761270CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250708000000</DTPOSTED>
+                        <TRNAMT>35000</TRNAMT>
+                        <FITID>458f9ba6224d5611</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT 025195007556531CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250710000000</DTPOSTED>
+                        <TRNAMT>48061.59</TRNAMT>
+                        <FITID>5c21954f9c70ef80</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT 025199009018386CCD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250714000000</DTPOSTED>
+                        <TRNAMT>10000</TRNAMT>
+                        <FITID>4a6b08e2934e1451</FITID>
+                        <NAME>TRNSFR OLB XFER FROM</NAME>
+                        <MEMO>TRNSFR CREDIT OLB XFER FROM 9124</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250715000000</DTPOSTED>
+                        <TRNAMT>2093.69</TRNAMT>
+                        <FITID>a258bb360aa931f4</FITID>
+                        <NAME>PAYROLL PAYCHEX</NAME>
+                        <MEMO>PAYROLL PAYCHEX</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250715000000</DTPOSTED>
+                        <TRNAMT>362.5</TRNAMT>
+                        <FITID>99d5e2f192fb7b41</FITID>
+                        <NAME>TAXES PAYCHEX TPS</NAME>
+                        <MEMO>TAXES PAYCHEX TPS 025211001854034PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250721000000</DTPOSTED>
+                        <TRNAMT>0.07</TRNAMT>
+                        <FITID>3543d2011edb09b2</FITID>
+                        <NAME>TAXES PAYCHEX TPS</NAME>
+                        <MEMO>TAXES PAYCHEX TPS</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250729000000</DTPOSTED>
+                        <TRNAMT>10000</TRNAMT>
+                        <FITID>8beb1992fa31fbc1</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250730000000</DTPOSTED>
+                        <TRNAMT>652.68</TRNAMT>
+                        <FITID>058e5201e13fb6e5</FITID>
+                        <NAME>PAYROLL SD Matthews and</NAME>
+                        <MEMO>PAYROLL SD Matthews and</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250801000000</DTPOSTED>
+                        <TRNAMT>10000</TRNAMT>
+                        <FITID>6e9702ef9a7dab87</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250805000000</DTPOSTED>
+                        <TRNAMT>5000</TRNAMT>
+                        <FITID>171f37d3d1bd204d</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250808000000</DTPOSTED>
+                        <TRNAMT>10000</TRNAMT>
+                        <FITID>9b19ec1c7c21681c</FITID>
+                        <NAME>TRNSFR OLB XFER FROM</NAME>
+                        <MEMO>TRNSFR CREDIT OLB XFER FROM 9124</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250813000000</DTPOSTED>
+                        <TRNAMT>652.67</TRNAMT>
+                        <FITID>ab298105ceeb81e6</FITID>
+                        <NAME>PAYROLL SD MATTHEWS AND OLB XFE</NAME>
+                        <MEMO>PAYROLL SD MATTHEWS AND OLB XFER FROM 9124 025225005829207PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250813000000</DTPOSTED>
+                        <TRNAMT>40000</TRNAMT>
+                        <FITID>a18942816d043bed</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT 025239009624734PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250815000000</DTPOSTED>
+                        <TRNAMT>5000</TRNAMT>
+                        <FITID>387caf32a8df3210</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250821000000</DTPOSTED>
+                        <TRNAMT>1994.4</TRNAMT>
+                        <FITID>71d16890b8951025</FITID>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>DEPOSIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250821000000</DTPOSTED>
+                        <TRNAMT>10000</TRNAMT>
+                        <FITID>8cab8bd59b3c1d0b</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250826000000</DTPOSTED>
+                        <TRNAMT>5000</TRNAMT>
+                        <FITID>f2de9c1f01d70717</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250827000000</DTPOSTED>
+                        <TRNAMT>652.67</TRNAMT>
+                        <FITID>28a6d57756a9a675</FITID>
+                        <NAME>PAYROLL SD Matthews and</NAME>
+                        <MEMO>PAYROLL SD Matthews and</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250902000000</DTPOSTED>
+                        <TRNAMT>10000</TRNAMT>
+                        <FITID>a618717da96ec983</FITID>
+                        <NAME>TRNSFR OLB XFER FROM</NAME>
+                        <MEMO>TRNSFR CREDIT OLB XFER FROM 9124</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250903000000</DTPOSTED>
+                        <TRNAMT>5000</TRNAMT>
+                        <FITID>d90f695529aa4e72</FITID>
+                        <NAME>TRNSFR OLB XFER FROM</NAME>
+                        <MEMO>TRNSFR CREDIT OLB XFER FROM 9124</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250910000000</DTPOSTED>
+                        <TRNAMT>10000</TRNAMT>
+                        <FITID>25334e8e314401d8</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250911000000</DTPOSTED>
+                        <TRNAMT>652.68</TRNAMT>
+                        <FITID>34e1b1a42f56f627</FITID>
+                        <NAME>PAYROLL SD MATTHEWS AND</NAME>
+                        <MEMO>PAYROLL SD MATTHEWS AND</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250912000000</DTPOSTED>
+                        <TRNAMT>10000</TRNAMT>
+                        <FITID>716f92bc7a9d9311</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250915000000</DTPOSTED>
+                        <TRNAMT>20000</TRNAMT>
+                        <FITID>edbccdf3fa9c6cd0</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250916000000</DTPOSTED>
+                        <TRNAMT>5000</TRNAMT>
+                        <FITID>d3a99fe769e64ae1</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250917000000</DTPOSTED>
+                        <TRNAMT>1500</TRNAMT>
+                        <FITID>9f1387235c7a2216</FITID>
+                        <NAME>Unknown Payee</NAME>
+                        <MEMO>DEPOSIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250925000000</DTPOSTED>
+                        <TRNAMT>5000</TRNAMT>
+                        <FITID>594da80fd6a342ec</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250929000000</DTPOSTED>
+                        <TRNAMT>652.68</TRNAMT>
+                        <FITID>7a83e492d715fecb</FITID>
+                        <NAME>PAYROLL SD Matthews and</NAME>
+                        <MEMO>PAYROLL SD Matthews and 025272008685193PPD 025254004049940PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20250929000000</DTPOSTED>
+                        <TRNAMT>5000</TRNAMT>
+                        <FITID>3aef7d05b8d3e26d</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20251001000000</DTPOSTED>
+                        <TRNAMT>20000</TRNAMT>
+                        <FITID>39cd4d3298b0c5b8</FITID>
+                        <NAME>TRNSFR OLB XFER FROM</NAME>
+                        <MEMO>TRNSFR CREDIT OLB XFER FROM 9124</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20251006000000</DTPOSTED>
+                        <TRNAMT>25000</TRNAMT>
+                        <FITID>00ad414b67a4a2c4</FITID>
+                        <NAME>TRNSFR OLB XFER FROM</NAME>
+                        <MEMO>TRNSFR CREDIT OLB XFER FROM 9124</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20251010000000</DTPOSTED>
+                        <TRNAMT>652.67</TRNAMT>
+                        <FITID>353e29eb5b8f562d</FITID>
+                        <NAME>PAYROLL SD MATTHEWS AND OLB XFE</NAME>
+                        <MEMO>PAYROLL SD MATTHEWS AND OLB XFER FROM 9124 025283002401861PPD</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20251010000000</DTPOSTED>
+                        <TRNAMT>1500</TRNAMT>
+                        <FITID>ca321f481129167f</FITID>
+                        <NAME>OLB XFER FROM</NAME>
+                        <MEMO>DEPOSIT OLB XFER FROM 9124</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20251014000000</DTPOSTED>
+                        <TRNAMT>40000</TRNAMT>
+                        <FITID>619397f3b41feaac</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20251016000000</DTPOSTED>
+                        <TRNAMT>20000</TRNAMT>
+                        <FITID>75367970302b76d4</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20251023000000</DTPOSTED>
+                        <TRNAMT>5000</TRNAMT>
+                        <FITID>27c9586a2b5b8250</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20251024000000</DTPOSTED>
+                        <TRNAMT>5000</TRNAMT>
+                        <FITID>a25f82667799ffe1</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20251029000000</DTPOSTED>
+                        <TRNAMT>10000</TRNAMT>
+                        <FITID>c9c9ca58c53a715a</FITID>
+                        <NAME>TRNSFR</NAME>
+                        <MEMO>TRNSFR CREDIT</MEMO>                        
+                    </STMTTRN>
+                    <STMTTRN>
+                        <TRNTYPE>CREDIT</TRNTYPE>
+                        <DTPOSTED>20251030000000</DTPOSTED>
+                        <TRNAMT>652.68</TRNAMT>
+                        <FITID>014ec797e0dd8fea</FITID>
+                        <NAME>PAYROLL SD Matthews and</NAME>
+                        <MEMO>PAYROLL SD Matthews and 025303007560406PPD</MEMO>                        
+                    </STMTTRN>
+                </BANKTRANLIST>
+                <LEDGERBAL>
+                    <BALAMT>0.00</BALAMT>
+                    <DTASOF>20251031000000</DTASOF>
+                </LEDGERBAL>
+            </STMTRS>
+        </STMTTRNRS>
+    </BANKMSGSRSV1>
+</OFX>
