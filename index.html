@@ -865,6 +865,40 @@
         </div>
     </div>
 
+    <!-- Sheet Import Modal -->
+    <div id="sheet-import-modal" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-40 z-50">
+        <div class="bg-white rounded-lg shadow-lg w-full max-w-lg p-6 space-y-4" style="max-height:90vh;overflow-y:auto">
+            <div class="flex items-center justify-between">
+                <h3 class="font-bold text-lg">Import Excel File</h3>
+                <button id="sheet-import-close" class="text-gray-500 hover:text-gray-700 text-xl leading-none">&times;</button>
+            </div>
+            <!-- Step 1: Sheet Selection -->
+            <div id="sheet-select-step" class="hidden">
+                <p class="text-sm font-medium text-gray-700 mb-2">This workbook has multiple sheets. Select one to import:</p>
+                <div id="sheet-list" class="space-y-1 max-h-36 overflow-y-auto border border-gray-200 rounded p-2"></div>
+            </div>
+            <!-- Step 2: Header Mapping -->
+            <div id="header-map-step">
+                <p class="text-sm font-medium text-gray-700 mb-1">Map columns to standard fields:</p>
+                <p class="text-xs text-gray-500 mb-3">Sheet: <span id="selected-sheet-name" class="font-semibold text-gray-700"></span></p>
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="text-left text-xs text-gray-500 border-b">
+                            <th class="pb-1 pr-4 w-1/2">Standard Field</th>
+                            <th class="pb-1 w-1/2">Your Column</th>
+                        </tr>
+                    </thead>
+                    <tbody id="header-map-rows"></tbody>
+                </table>
+            </div>
+            <div id="sheet-import-preview" class="text-xs text-gray-400 hidden"></div>
+            <div class="flex justify-end gap-2 pt-1">
+                <button id="sheet-import-cancel" class="px-3 py-2 bg-slate-200 rounded text-sm">Cancel</button>
+                <button id="sheet-import-confirm" class="px-3 py-2 bg-emerald-600 text-white rounded text-sm font-semibold">Import</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Transaction edit/add modal -->
     <div id="transaction-modal" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-40 z-50">
         <div class="bg-white rounded-lg shadow-lg w-full max-w-md p-4 space-y-3">
@@ -2152,22 +2186,195 @@ ${JSON.stringify(samples)}`;
             updateReconcileView();
         }
 
+        // === Sheet Import Dialog ===
+        function showSheetImportDialog(wb, fileName) {
+            return new Promise((resolve) => {
+                const modal = document.getElementById('sheet-import-modal');
+                const sheetSelectStep = document.getElementById('sheet-select-step');
+                const sheetList = document.getElementById('sheet-list');
+                const selectedSheetNameEl = document.getElementById('selected-sheet-name');
+                const headerMapRows = document.getElementById('header-map-rows');
+                const previewEl = document.getElementById('sheet-import-preview');
+                const cancelBtn = document.getElementById('sheet-import-cancel');
+                const closeBtn = document.getElementById('sheet-import-close');
+                const confirmBtn = document.getElementById('sheet-import-confirm');
+
+                const sheetNames = wb.SheetNames;
+                let currentSheet = sheetNames[0];
+
+                const standardFields = [
+                    { key: 'Date', label: 'Date', required: true },
+                    { key: 'Description', label: 'Description', required: true },
+                    { key: 'Amount', label: 'Amount', required: true },
+                    { key: 'Schedule C Category', label: 'Schedule C Category', required: false }
+                ];
+
+                function getSheetColumns(sheetName) {
+                    const ws = wb.Sheets[sheetName];
+                    const rows = XLSX.utils.sheet_to_json(ws, { defval: '', header: 1 });
+                    if (!rows || rows.length === 0) return [];
+                    const headerRow = rows[0];
+                    return (Array.isArray(headerRow) ? headerRow : [])
+                        .map(h => String(h || '').trim())
+                        .filter(h => h !== '');
+                }
+
+                function bestMatch(columns, fieldKey) {
+                    const fieldNorm = normalizeColumnKey(fieldKey);
+                    for (const col of columns) {
+                        if (normalizeColumnKey(col) === fieldNorm) return col;
+                    }
+                    for (const col of columns) {
+                        const cn = normalizeColumnKey(col);
+                        if (cn.includes(fieldNorm) || fieldNorm.includes(cn)) return col;
+                    }
+                    return '';
+                }
+
+                function updateHeaderMap(sheetName) {
+                    currentSheet = sheetName;
+                    selectedSheetNameEl.textContent = sheetName;
+                    const columns = getSheetColumns(sheetName);
+                    const ws = wb.Sheets[sheetName];
+                    const json = XLSX.utils.sheet_to_json(ws, { defval: '' });
+                    previewEl.textContent = `${json.length} row${json.length !== 1 ? 's' : ''} found`;
+                    previewEl.classList.remove('hidden');
+
+                    headerMapRows.innerHTML = '';
+                    standardFields.forEach(field => {
+                        const matched = bestMatch(columns, field.key);
+                        const tr = document.createElement('tr');
+                        const optNone = field.required ? '' : '<option value="">(none)</option>';
+                        const colOptions = columns.map(col => {
+                            const esc = col.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+                            return `<option value="${esc}" ${col === matched ? 'selected' : ''}>${esc}</option>`;
+                        }).join('');
+                        tr.innerHTML = `
+                            <td class="py-1.5 pr-3 font-medium text-sm ${field.required ? 'text-gray-800' : 'text-gray-500'}">
+                                ${field.label}${field.required ? ' <span class="text-red-500">*</span>' : ''}
+                            </td>
+                            <td class="py-1.5">
+                                <select data-field="${field.key}" class="w-full border border-gray-300 rounded px-2 py-1 text-sm focus:outline-none focus:ring-1 focus:ring-emerald-500">
+                                    ${optNone}${colOptions}
+                                </select>
+                            </td>`;
+                        headerMapRows.appendChild(tr);
+                    });
+                }
+
+                // Sheet selection step
+                if (sheetNames.length > 1) {
+                    sheetSelectStep.classList.remove('hidden');
+                    sheetList.innerHTML = '';
+                    sheetNames.forEach((name, i) => {
+                        const btn = document.createElement('button');
+                        const activeClass = 'w-full text-left px-3 py-1.5 rounded text-sm border border-emerald-500 bg-emerald-50 font-medium';
+                        const inactiveClass = 'w-full text-left px-3 py-1.5 rounded text-sm border border-transparent hover:bg-gray-50';
+                        btn.className = i === 0 ? activeClass : inactiveClass;
+                        btn.textContent = name;
+                        btn.addEventListener('click', () => {
+                            sheetList.querySelectorAll('button').forEach(b => { b.className = inactiveClass; });
+                            btn.className = activeClass;
+                            updateHeaderMap(name);
+                        });
+                        sheetList.appendChild(btn);
+                    });
+                } else {
+                    sheetSelectStep.classList.add('hidden');
+                }
+
+                updateHeaderMap(currentSheet);
+                modal.classList.remove('hidden');
+                modal.style.display = 'flex';
+
+                function cleanup() {
+                    modal.classList.add('hidden');
+                    modal.style.display = 'none';
+                    cancelBtn.removeEventListener('click', onCancel);
+                    closeBtn.removeEventListener('click', onCancel);
+                    confirmBtn.removeEventListener('click', onConfirm);
+                }
+                function onCancel() { cleanup(); resolve(null); }
+                function onConfirm() {
+                    const selects = headerMapRows.querySelectorAll('select');
+                    const columnMap = {};
+                    let valid = true;
+                    selects.forEach(sel => {
+                        const field = sel.dataset.field;
+                        const col = sel.value;
+                        const fieldDef = standardFields.find(f => f.key === field);
+                        if (fieldDef && fieldDef.required && !col) {
+                            valid = false;
+                            sel.classList.add('border-red-500', 'ring-1', 'ring-red-400');
+                        } else {
+                            sel.classList.remove('border-red-500', 'ring-1', 'ring-red-400');
+                            if (col) columnMap[field] = col;
+                        }
+                    });
+                    if (!valid) {
+                        showMessage('Please map all required fields (marked with *).', 'warning', 3000);
+                        return;
+                    }
+                    cleanup();
+                    resolve({ sheetName: currentSheet, columnMap });
+                }
+                cancelBtn.addEventListener('click', onCancel);
+                closeBtn.addEventListener('click', onCancel);
+                confirmBtn.addEventListener('click', onConfirm);
+            });
+        }
+
+        function applyColumnMapping(json, columnMap) {
+            return json.map(row => {
+                const mapped = {};
+                mapped['Date'] = row[columnMap['Date']] ?? '';
+                mapped['Description'] = row[columnMap['Description']] ?? '';
+                const rawAmt = row[columnMap['Amount']] ?? 0;
+                const amt = parseAmount(rawAmt);
+                mapped['Amount'] = Number.isFinite(amt) ? amt : 0;
+                mapped['amount'] = mapped['Amount'];
+                mapped['Payee'] = mapped['Description'];
+                if (columnMap['Schedule C Category'] && row[columnMap['Schedule C Category']] !== undefined) {
+                    mapped['Schedule C Category'] = row[columnMap['Schedule C Category']];
+                }
+                return ensureScheduleCCategoryField(mapped);
+            });
+        }
+
         async function importTransactionsFromFile(file) {
             const data = await file.arrayBuffer();
+            const isExcel = /\.(xlsx|xls)$/i.test(file.name);
             const wb = XLSX.read(data, { type: 'array' });
-            const sheetName = wb.SheetNames[0];
-            const ws = wb.Sheets[sheetName];
-            const json = XLSX.utils.sheet_to_json(ws, { defval: '' });
-            const firstRow = json && json.length > 0 ? json[0] : {};
-            state.originalHeaders = Object.keys(firstRow || {});
-            const normalizedKeys = Object.keys(firstRow || {}).map(normalizeColumnKey);
-            const isStandardThreeColumn = ['date', 'description', 'amount'].every(key => normalizedKeys.includes(key)) &&
-                normalizedKeys.length <= 4 &&
-                !normalizedKeys.includes('schedule c category'); // allow an extra blank/undefined column but NOT a category column
-            const normalized = isStandardThreeColumn
-                ? normalizeStandardTransactions(json)
-                : json.map(row => normalizeImportedRow(row));
-            state.unassignedViewMode = isStandardThreeColumn ? 'standard' : 'full';
+
+            let sheetName = wb.SheetNames[0];
+            let normalized;
+
+            if (isExcel) {
+                const result = await showSheetImportDialog(wb, file.name);
+                if (!result) return { appended: 0, skippedDuplicate: false };
+                sheetName = result.sheetName;
+                const ws = wb.Sheets[sheetName];
+                const json = XLSX.utils.sheet_to_json(ws, { defval: '' });
+                const firstRow = json && json.length > 0 ? json[0] : {};
+                state.originalHeaders = Object.keys(firstRow || {});
+                normalized = applyColumnMapping(json, result.columnMap);
+                state.unassignedViewMode = 'standard';
+            } else {
+                // CSV: preserve existing auto-detect behavior
+                const ws = wb.Sheets[sheetName];
+                const json = XLSX.utils.sheet_to_json(ws, { defval: '' });
+                const firstRow = json && json.length > 0 ? json[0] : {};
+                state.originalHeaders = Object.keys(firstRow || {});
+                const normalizedKeys = Object.keys(firstRow || {}).map(normalizeColumnKey);
+                const isStandardThreeColumn = ['date', 'description', 'amount'].every(key => normalizedKeys.includes(key)) &&
+                    normalizedKeys.length <= 4 &&
+                    !normalizedKeys.includes('schedule c category');
+                normalized = isStandardThreeColumn
+                    ? normalizeStandardTransactions(json)
+                    : json.map(row => normalizeImportedRow(row));
+                state.unassignedViewMode = isStandardThreeColumn ? 'standard' : 'full';
+            }
+
             if (normalized.length === 0) {
                 showMessage(`"${file.name}" did not contain any transactions.`, 'warning', 3000);
                 return { appended: 0, skippedDuplicate: false };
