@@ -1542,6 +1542,12 @@
             return key.toString().toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
         }
 
+        // Remove spaces around ':' for QBD subaccount compatibility: "A : B" → "A:B"
+        function normalizeAccountName(name) {
+            if (!name) return name;
+            return name.toString().replace(/\s*:\s*/g, ':');
+        }
+
         function mapAccountTypeToIifType(account) {
             if (!account) return '';
             const typeMap = {
@@ -1634,7 +1640,7 @@
             const existing = new Set(state.coaTable.map(a => (a['Account Name'] || '').toString().trim().toLowerCase()));
             let added = 0;
             state.rules.forEach(r => {
-                const category = (r.category || r.Category || r[1] || '').toString().trim();
+                const category = normalizeAccountName((r.category || r.Category || r[1] || '').toString().trim());
                 if (!category) return;
                 const key = category.toLowerCase();
                 if (!existing.has(key)) {
@@ -1654,7 +1660,7 @@
             const existing = new Set(state.coaTable.map(a => (a['Account Name'] || '').toString().trim().toLowerCase()));
             let added = 0;
             state.transactions.forEach(tx => {
-                const category = (tx['Schedule C Category'] || '').toString().trim();
+                const category = normalizeAccountName((tx['Schedule C Category'] || '').toString().trim());
                 if (!category) return;
                 const key = category.toLowerCase();
                 if (!existing.has(key)) {
@@ -4013,7 +4019,7 @@ ${JSON.stringify(samples)}`;
         });
 
         document.getElementById('add-coa-save').addEventListener('click', () => {
-            const name = document.getElementById('new-account-name').value.trim();
+            const name = normalizeAccountName(document.getElementById('new-account-name').value.trim());
             const type = document.getElementById('new-account-type').value;
             const desc = document.getElementById('new-account-desc').value.trim();
             if (!name) { showMessage('Name required', 'warning', 2500); return; }
@@ -4502,7 +4508,7 @@ ${JSON.stringify(samples)}`;
                 rows.forEach(tr => {
                     const input = tr.querySelector('input');
                     if (input && input.value.trim()) {
-                        const name = input.value.trim();
+                        const name = normalizeAccountName(input.value.trim());
                         // Check duplicates
                         if (!state.coaTable.some(a => a['Account Name'].toLowerCase() === name.toLowerCase())) {
                             state.coaTable.push({
