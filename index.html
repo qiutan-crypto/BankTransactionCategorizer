@@ -483,6 +483,7 @@
                     <h2 class="font-bold text-lg">Chart of Accounts</h2>
                     <div class="flex gap-2">
                         <button id="load-coa-btn" class="px-3 py-2 bg-blue-600 text-white rounded-md">Load COA</button>
+                        <button id="export-coa-csv-button" class="px-3 py-2 bg-slate-600 text-white rounded-md">Export COA</button>
                     </div>
                 </div>
                 <div class="overflow-x-auto border rounded-md">
@@ -5353,6 +5354,22 @@ NEWFILEUID:NONE
 
         const exportCoaButton = document.getElementById('export-coa-button');
         if (exportCoaButton) exportCoaButton.addEventListener('click', handleCoaExportClick);
+
+        document.getElementById('export-coa-csv-button').addEventListener('click', () => {
+            if (!Array.isArray(state.coaTable) || state.coaTable.length === 0) {
+                showMessage('No accounts to export.', 'warning', 3000);
+                return;
+            }
+            const escCsv = v => `"${String(v ?? '').replace(/"/g, '""')}"`;
+            const rows = ['"Account Name","Account Name"'];
+            state.coaTable.forEach(acc => {
+                const name = escCsv(acc['Account Name'] || '');
+                rows.push(`${name},${name}`);
+            });
+            const stamp = new Date().toISOString().slice(0, 10);
+            triggerDownload(`COA_Export_${stamp}.csv`, rows.join('\r\n'), 'text/csv;charset=utf-8');
+            showMessage('COA exported.', 'success', 2500);
+        });
         const exportJournalButton = document.getElementById('export-journal-button');
         if (exportJournalButton) exportJournalButton.addEventListener('click', handleJournalExportClick);
         const exportRulesCsvButton = document.getElementById('export-rules-csv-button');
