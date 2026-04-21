@@ -4018,24 +4018,28 @@ ${JSON.stringify(samples)}`;
             addCoaModal.classList.add('hidden'); addCoaModal.style.display = 'none';
         });
 
-        document.getElementById('add-coa-save').addEventListener('click', () => {
+        document.getElementById('add-coa-save').addEventListener('click', async () => {
             const name = normalizeAccountName(document.getElementById('new-account-name').value.trim());
             const type = document.getElementById('new-account-type').value;
             const desc = document.getElementById('new-account-desc').value.trim();
             if (!name) { showMessage('Name required', 'warning', 2500); return; }
 
-            const acct = { 'Account Name': name, 'Account Type': type, 'Description': desc };
-
             if (addCoaModal.dataset.mode === 'edit') {
                 const idx = parseInt(addCoaModal.dataset.idx);
                 if (!isNaN(idx) && state.coaTable[idx]) {
-                    state.coaTable[idx] = acct;
-                    showMessage('Account updated', 'success', 2000);
+                    const account = state.coaTable[idx];
+                    const result = await applyAccountRename(account, name);
+                    if (!result || result.status === 'failed' || result.status === 'cancelled') return;
+                    // applyAccountRename already updated the account name and transactions;
+                    // update type and description here
+                    const target = result.status === 'merged'
+                        ? state.coaTable.find(a => (a['Account Name'] || '').toLowerCase() === name.toLowerCase())
+                        : account;
+                    if (target) { target['Account Type'] = type; target['Description'] = desc; }
+                    showMessage('Account updated.', 'success', 2000);
                 }
             } else {
-                // infer type only on add if blank? actually type is from dropdown so it's set.
-                // But previously we inferred if type was empty. The dropdown has a default though.
-                if (!type) acct['Account Type'] = inferAccountType(name);
+                const acct = { 'Account Name': name, 'Account Type': type || inferAccountType(name), 'Description': desc };
                 state.coaTable.push(acct);
                 showMessage('Account added', 'success', 2000);
             }
