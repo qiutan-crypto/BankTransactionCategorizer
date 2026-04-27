@@ -3647,6 +3647,16 @@ ${JSON.stringify(samples)}`;
             state.transactionModalMonthKey = null;
         }
 
+        // Returns "YYYY-MM" from a displayDate string in MM/DD/YYYY format
+        function getMonthKeyFromDate(displayDate) {
+            if (!displayDate) return null;
+            const parts = displayDate.split('/');
+            if (parts.length !== 3) return null;
+            const [month, , year] = parts;
+            if (!year || !month) return null;
+            return `${year}-${month.padStart(2, '0')}`;
+        }
+
         function saveTransactionModal() {
             const mode = state.transactionModalMode;
             if (!mode) return;
